@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.wsu.bdas.androidalpha.HomeScreen">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cadence"
+            android:textAlignment="center"
+            android:id="@+id/cadenceP"
+            android:drawableLeft="@drawable/pushups"
+            android:background="@drawable/button_shape"
+            android:layout_alignParentTop="true"/>
+
+        <Button
+            android:id="@+id/sitP"
+            android:textAlignment="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/sit"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/situps"
+            android:background="@drawable/button_shape"
+            android:layout_below="@+id/cadenceP" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/runP"
+            android:layout_below="@id/sitP"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/run"
+            android:drawableLeft="@drawable/run"
+            android:background="@drawable/button_shape" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/setP"
+            android:layout_below="@id/runP"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/settings"
+            android:drawableLeft="@drawable/settings"
+            android:background="@drawable/button_shape" />
+
+        <Button
+            android:layout_centerHorizontal="true"
+            android:id="@+id/exit"
+            android:layout_below="@id/setP"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/exit"
+            android:drawableLeft="@drawable/exit"
+            android:background="@drawable/button_shape" />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
